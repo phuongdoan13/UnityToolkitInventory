@@ -11,10 +11,6 @@ namespace WUG.Scripts
         VisualElement m_Root;
         VisualElement m_SlotsContainer;
 
-        void Start()
-        {
-        }
-        
         void Awake()
         {
             //Store the root from the UI Document component
@@ -24,7 +20,7 @@ namespace WUG.Scripts
             m_SlotsContainer = m_Root.Q<VisualElement>("SlotsContainer");
 
             //Create InventorySlots and add them as children to the SlotContainer
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 9; i++)
             {
                 InventorySlot item = new InventorySlot();
                 InventoryItems.Add(item);
