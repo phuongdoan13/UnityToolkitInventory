@@ -8,28 +8,27 @@ namespace WUG.Scripts
     {
         public List<InventorySlot> InventoryItems = new List<InventorySlot>();
 
-        private VisualElement m_Root;
-        private VisualElement m_SlotContainer;
+        VisualElement m_Root;
+        VisualElement m_SlotsContainer;
 
         void Start()
         {
         }
         
-        private void Awake()
+        void Awake()
         {
             //Store the root from the UI Document component
             m_Root = GetComponent<UIDocument>().rootVisualElement;
 
             //Search the root for the SlotContainer Visual Element
-            m_SlotContainer = m_Root.Q<VisualElement>("SlotContainer");
+            m_SlotsContainer = m_Root.Q<VisualElement>("SlotsContainer");
 
             //Create InventorySlots and add them as children to the SlotContainer
             for (int i = 0; i < 20; i++)
             {
                 InventorySlot item = new InventorySlot();
                 InventoryItems.Add(item);
-
-                m_SlotContainer.Add(item);
+                m_SlotsContainer.Add(item);
             }
         }
         
