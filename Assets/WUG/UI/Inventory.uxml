@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="/Assets/Inventory.uss" />
+    <Style src="Inventory.uss" />
     <ui:VisualElement name="Container" class="container">
         <ui:VisualElement name="Inventory" class="inventory">
             <ui:Label text="Inventory" display-tooltip-when-elided="true" name="Header" class="header" />
