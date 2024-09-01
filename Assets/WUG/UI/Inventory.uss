@@ -53,7 +53,7 @@
 }
 
 .slotIcon {
-    padding: 15px;
     flex-shrink: 0;
     flex-grow: 1;
+    padding: 15px;
 }
